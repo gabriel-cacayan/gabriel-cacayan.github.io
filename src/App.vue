@@ -1,26 +1,56 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <v-app theme="dark">
+    <TheHeader :drawer="drawer" />
+    <v-main>
+      <template v-if="tab == 'Home'">
+        <HomeDetail />
+      </template>
+      <template v-else-if="tab == 'Projects'">
+        <ProjectDetail />
+      </template>
+      <template v-else>
+        <ExperienceDetail />
+      </template>
+    </v-main>
+  </v-app>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import ExperienceDetail from "./components/ExperienceDetail.vue";
+import HomeDetail from "./components/HomeDetail.vue";
+import ProjectDetail from "./components/ProjectDetail.vue";
+import TheHeader from "./components/TheHeader.vue";
 
 export default {
-  name: 'App',
+  name: "App",
+
   components: {
-    HelloWorld
-  }
-}
+    ExperienceDetail,
+    TheHeader,
+    HomeDetail,
+    ProjectDetail,
+  },
+
+  data() {
+    return {
+      tab: "Home",
+    };
+  },
+  methods: {
+    selectedTab: function (tab) {
+      this.tab = tab;
+    },
+  },
+  provide() {
+    return {
+      selectedTab: this.selectedTab,
+    };
+  },
+};
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+.pointer {
+  cursor: pointer;
 }
 </style>
