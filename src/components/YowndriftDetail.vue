@@ -1,12 +1,12 @@
 <template>
   <v-container>
-    <h1>About the project</h1>
+    <h1 class="text-h3 my-4">About the project</h1>
     <p class="mb-4">
       Yowndrift is a blog web application, where anyone can share their ideas or
       knowledge on a specific topic.
     </p>
     <v-divider class="my-4"></v-divider>
-    <h1>Features</h1>
+    <h1 class="text-h3 mt-10 mb-4">Features</h1>
     <ul class="mb-4">
       <li>
         The system has log in, register, reset password, and email verification.
@@ -31,10 +31,10 @@
       <li>The system used Livewire for Front-end and Laravel for Back-end.</li>
     </ul>
     <v-divider class="my-4"></v-divider>
-    <h1>Platform Type</h1>
+    <h1 class="text-h3 mt-10 mb-4">Platform Type</h1>
     <p class="mb-4">Web App</p>
     <v-divider class="my-4"></v-divider>
-    <h1>Technologies used</h1>
+    <h1 class="text-h3 mt-10 mb-4">Technologies used</h1>
     <h3 class="mb-4">For front-end:</h3>
     <ul class="mb-4">
       <li>HTML</li>
@@ -52,17 +52,20 @@
       <li>MySQL</li>
     </ul>
 
-    <v-divider class="my-4"></v-divider>
-    <div>
+    <div class="mt-10">
       <v-btn
         variant="outlined"
         append-icon="mdi-code-braces"
         href="https://github.com/gabriel-cacayan/yowndrift"
+        :class="displayBlock"
         target="_blank"
-        class="mr-10"
         >Source Code</v-btn
       >
-      <v-btn variant="tonal" color="primary" append-icon="mdi-eye-outline"
+      <v-btn
+        variant="tonal"
+        color="primary"
+        append-icon="mdi-eye-outline"
+        :class="displayBlock"
         >Launch App
         <v-tooltip activator="parent" location="end"
           >Unavailable at the moment.</v-tooltip
@@ -70,7 +73,7 @@
       >
     </div>
     <v-divider class="my-4"></v-divider>
-    <h1>Gallery</h1>
+    <h1 class="text-h3 mt-10 mb-4">Gallery</h1>
     <lightgallery
       :settings="{ speed: 500, plugins: plugins }"
       :onBeforeOpen="onBeforeOpen"
@@ -81,7 +84,7 @@
           v-show="picture.show"
           :alt="picture.title"
           :src="picture.src"
-          width="300"
+          :width="galleryWidth"
         />
       </a>
     </lightgallery>
@@ -90,11 +93,23 @@
 
 <script>
 // import { Options, Vue } from "vue-class-component";
+import { useDisplay } from "vuetify";
 import Lightgallery from "lightgallery/vue";
 import lgThumbnail from "lightgallery/plugins/thumbnail";
 import lgZoom from "lightgallery/plugins/zoom";
-import y1 from "../assets/yowndrift/yowndrift_landing.jpeg";
-import y2 from "../assets/yowndrift/yowndrift_home.jpeg";
+import y1 from "../assets/yowndrift/y1.jpeg";
+import y2 from "../assets/yowndrift/y2.jpeg";
+import y3 from "../assets/yowndrift/y3.jpeg";
+import y4 from "../assets/yowndrift/y4.jpeg";
+import y5 from "../assets/yowndrift/y5.jpeg";
+import y6 from "../assets/yowndrift/y6.png";
+import y7 from "../assets/yowndrift/y7.jpeg";
+import y8 from "../assets/yowndrift/y8.jpeg";
+import y9 from "../assets/yowndrift/y9.jpeg";
+import y10 from "../assets/yowndrift/y10.jpeg";
+import y11 from "../assets/yowndrift/y11.jpeg";
+import y12 from "../assets/yowndrift/y12.jpeg";
+import y13 from "../assets/yowndrift/y13.jpeg";
 
 export default {
   components: {
@@ -107,18 +122,100 @@ export default {
         {
           id: 1,
           src: y1,
-          title: "Landing Page",
+          title: "Landing page",
           show: true,
         },
         {
           id: 2,
           src: y2,
-          title: "Home Page",
+          title: "Home page",
+          show: false,
+        },
+        {
+          id: 3,
+          src: y3,
+          title: "All posts",
+          show: false,
+        },
+        {
+          id: 4,
+          src: y4,
+          title: "Create a post",
+          show: false,
+        },
+        {
+          id: 5,
+          src: y5,
+          title: "Specific post",
+          show: false,
+        },
+        {
+          id: 6,
+          src: y6,
+          title: "Search a post",
+          show: false,
+        },
+        {
+          id: 7,
+          src: y7,
+          title: "Login",
+          show: false,
+        },
+        {
+          id: 8,
+          src: y8,
+          title: "Register",
+          show: false,
+        },
+        {
+          id: 9,
+          src: y9,
+          title: "Reset password",
+          show: false,
+        },
+        {
+          id: 10,
+          src: y10,
+          title: "Dashboard",
+          show: false,
+        },
+        {
+          id: 11,
+          src: y11,
+          title: "Profile",
+          show: false,
+        },
+        {
+          id: 12,
+          src: y12,
+          title: "Update a post",
+          show: false,
+        },
+        {
+          id: 13,
+          src: y13,
+          title: "User's posts",
           show: false,
         },
       ],
-      msg: "hello",
+      responsive: useDisplay().name.value,
     };
+  },
+  computed: {
+    displayBlock() {
+      if (this.responsive == "xs" || this.responsive == "sm") {
+        return "mt-4 w-100";
+      } else {
+        return "mr-2";
+      }
+    },
+    galleryWidth() {
+      if (this.responsive == "xs" || this.responsive == "sm") {
+        return 300;
+      } else {
+        return 700;
+      }
+    },
   },
   methods: {
     onBeforeOpen: function () {

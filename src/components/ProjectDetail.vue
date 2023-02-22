@@ -1,5 +1,5 @@
 <template>
-  <v-container>
+  <v-container class="mb-10">
     <h1 class="text-center my-4" v-if="!selectedProject">Projects</h1>
     <v-row v-if="!selectedProject">
       <v-col
@@ -9,7 +9,7 @@
         sm="4"
         md="6"
       >
-        <v-card class="mx-auto" max-width="400" v-ripple>
+        <v-card class="mx-auto" max-width="400" v-ripple border>
           <v-img
             class="align-end text-white"
             height="400"
@@ -25,26 +25,48 @@
             </div>
           </v-card-text>
 
-          <v-card-actions>
+          <v-card-actions class="d-flex justify-space-between">
             <v-btn color="orange" @click="selectProject(project.name)"
               >View</v-btn
             >
+
+            <p class="text-grey-darken-1">
+              {{ project.dateCreated }}
+            </p>
           </v-card-actions>
         </v-card>
       </v-col>
     </v-row>
 
     <template v-if="selectedProject == 'Vue Movie'">
-      <p>Vue.js</p>
+      <div class="d-flex justify-end">
+        <v-btn
+          prepend-icon="mdi-arrow-left"
+          variant="outlined"
+          color="info"
+          @click="selectProject(null)"
+          >Go Back</v-btn
+        >
+      </div>
+      <p>Vue Movie</p>
     </template>
     <template v-else-if="selectedProject == 'Yowndrift'">
+      <div class="d-flex justify-end">
+        <v-btn
+          prepend-icon="mdi-arrow-left"
+          variant="outlined"
+          color="info"
+          @click="selectProject(null)"
+          >Go Back</v-btn
+        >
+      </div>
       <Yowndrift />
     </template>
   </v-container>
 </template>
 
 <script>
-import yowndriftHomeMobile from "../assets/yowndrift/yowndrift_home_mobile.jpg";
+import y0 from "../assets/yowndrift/y0.jpg";
 import vueMovie from "../assets/vue_movie/vue_movie.png";
 import Yowndrift from "./YowndriftDetail.vue";
 
@@ -63,14 +85,16 @@ export default {
           description:
             "Vue Movie is an online database of information related to films, television series, music videos, podcasts, home videos, video games, and streaming content online including cast, production crew and personal biographies, plot summaries, trivia, ratings, and fan and critical reviews.",
           link: "",
+          dateCreated: "2-18-2023",
         },
         {
-          img: yowndriftHomeMobile,
+          img: y0,
           name: "Yowndrift",
           technology: "Laravel",
           description:
             "Yowndrift is a blog web application, where anyone can share their ideas or knowledge on a specific topic.",
           link: "",
+          dateCreated: "5-10-2021",
         },
       ],
     };

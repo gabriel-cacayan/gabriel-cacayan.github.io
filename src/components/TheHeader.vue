@@ -26,7 +26,7 @@
     </v-list>
   </v-navigation-drawer>
 
-  <v-app-bar>
+  <v-app-bar absolute>
     <v-app-bar-nav-icon
       v-if="showNavIcon"
       @click="drawer = !drawer"

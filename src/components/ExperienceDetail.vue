@@ -1,5 +1,5 @@
 <template>
-  <v-container>
+  <v-container class="mb-10">
     <h1 class="text-center my-4">Experience Timeline</h1>
     <v-timeline class="overflow-auto">
       <v-timeline-item

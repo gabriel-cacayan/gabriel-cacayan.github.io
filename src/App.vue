@@ -1,5 +1,13 @@
 <template>
   <v-app theme="dark">
+    <!-- <v-switch
+      v-model="theme"
+      label="Dark Mode"
+      color="orange"
+      value="dark"
+      hide-details
+    ></v-switch>
+    {{ theme }} -->
     <TheHeader :drawer="drawer" />
     <v-main>
       <template v-if="tab == 'Home'">
@@ -34,6 +42,7 @@ export default {
   data() {
     return {
       tab: "Home",
+      theme: "dark",
     };
   },
   methods: {
