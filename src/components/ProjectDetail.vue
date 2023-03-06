@@ -48,7 +48,7 @@
           >Go Back</v-btn
         >
       </div>
-      <p>Vue Movie</p>
+      <VueMovie />
     </template>
     <template v-else-if="selectedProject == 'Yowndrift'">
       <div class="d-flex justify-end">
@@ -67,23 +67,25 @@
 
 <script>
 import y0 from "../assets/yowndrift/y0.jpg";
-import vueMovie from "../assets/vue_movie/vue_movie.png";
+import v0 from "../assets/vue_movie/v0.jpg";
 import Yowndrift from "./YowndriftDetail.vue";
+import VueMovie from "./VueMovieDetail.vue";
 
 export default {
   components: {
     Yowndrift,
+    VueMovie,
   },
   data() {
     return {
       selectedProject: null,
       projects: [
         {
-          img: vueMovie,
+          img: v0,
           name: "Vue Movie",
           technology: "Vue.js",
           description:
-            "Vue Movie is an online database of information related to films, television series, music videos, podcasts, home videos, video games, and streaming content online including cast, production crew and personal biographies, plot summaries, trivia, ratings, and fan and critical reviews.",
+            "Vue Movie is an online database of information related to films, television series, ratings, and reviews.",
           link: "",
           dateCreated: "2-18-2023",
         },

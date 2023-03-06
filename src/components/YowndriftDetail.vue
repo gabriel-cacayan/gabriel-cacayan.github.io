@@ -68,7 +68,7 @@
         :class="displayBlock"
         >Launch App
         <v-tooltip activator="parent" location="end"
-          >Unavailable at the moment.</v-tooltip
+          >In maintenance mode.</v-tooltip
         ></v-btn
       >
     </div>

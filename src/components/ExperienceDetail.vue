@@ -40,7 +40,7 @@ export default {
           title: "Software Developer",
           company: "Johnsons Berkshire Solutions Inc.",
           description:
-            "Performed software development tasks related to blockchain technology.",
+            "Performed software development tasks, assisted in the design and functionality of software applications, and communicated closely with senior software engineers.",
         },
         {
           color: "orange",
@@ -48,7 +48,7 @@ export default {
           title: "Software Developer Intern",
           company: "Johnsons Berkshire Solutions Inc.",
           description:
-            "Performed software development tasks, assisted in the design and functionality of software applications, and communicated closely with senior software engineers.",
+            "Responsible for the maintenance and support of all the delivered projects of the Department.",
         },
       ],
     };
