@@ -36,7 +36,7 @@ export default {
         },
         {
           color: "amber",
-          year: "March 26, 2022 - Present",
+          year: "March 26, 2022 - April 14, 2023",
           title: "Software Developer",
           company: "Johnsons Berkshire Solutions Inc.",
           description:
