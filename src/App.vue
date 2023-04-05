@@ -19,6 +19,10 @@
       <template v-else>
         <ExperienceDetail />
       </template>
+      <v-footer class="d-flex align-center justify-center bg-grey-darken-4">
+        {{ new Date().getFullYear() }} —
+        <strong>Gabriel Cacayan</strong></v-footer
+      >
     </v-main>
   </v-app>
 </template>

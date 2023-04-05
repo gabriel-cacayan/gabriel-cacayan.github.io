@@ -15,8 +15,10 @@
       </v-col>
     </v-row>
 
+    <v-divider :thickness="2" color="grey-darken-4"></v-divider>
+
     <div class="my-10">
-      <h1 class="text-h3">About Me</h1>
+      <h1 class="text-h3 mb-4">About Me</h1>
       <p class="text-h6 text-grey-darken-1 my-4">
         I am a software developer with a focus on creating efficient, scalable,
         and user-friendly applications using Laravel. With several years of
@@ -25,9 +27,12 @@
         solutions that meet client needs.
       </p>
     </div>
+
+    <v-divider :thickness="2" color="grey-darken-4"></v-divider>
+
     <v-row class="my-10">
       <v-col cols="12">
-        <h1 class="text-h3">Skills</h1>
+        <h1 class="text-h3 mb-4">Skills</h1>
       </v-col>
       <v-col v-for="skill in skills" :key="skill.name" cols="6" sm="4" md="2">
         <v-sheet rounded border class="d-flex flex-column align-center pa-4">
