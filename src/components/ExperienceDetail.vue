@@ -10,6 +10,7 @@
       >
         <template v-slot:opposite>
           <span>{{ item.year }}</span>
+          <span class="ml-2 text-grey">({{ item.totalYears }})</span>
         </template>
         <v-card class="elevation-2 mx-auto">
           <v-card-title class="text-h5">{{ item.title }}</v-card-title>
@@ -28,7 +29,16 @@ export default {
       items: [
         {
           color: "pink",
-          year: "June 28, 2022",
+          year: "April 11, 2023 - Present",
+          totalYears: "N/A",
+          title: "Web Developer",
+          company: "Fil-Global Immigration Services Corporation",
+          description: "N/A",
+        },
+        {
+          color: "pink",
+          year: "June 2018 - June 2022",
+          totalYears: "4 years",
           title: "Graduation",
           company: "University of Caloocan City",
           description:
@@ -37,6 +47,7 @@ export default {
         {
           color: "amber",
           year: "March 26, 2022 - April 14, 2023",
+          totalYears: "1 year",
           title: "Software Developer",
           company: "Johnsons Berkshire Solutions Inc.",
           description:
@@ -45,6 +56,7 @@ export default {
         {
           color: "orange",
           year: "July 19, 2021 - March 20, 2022",
+          totalYears: "8 months",
           title: "Software Developer Intern",
           company: "Johnsons Berkshire Solutions Inc.",
           description:
