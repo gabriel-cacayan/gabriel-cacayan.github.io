@@ -14,9 +14,9 @@ cd dist
 
 git init
 git add -A
-git commit -m 'Initial Commit'
+git commit -m 'Upload portfolio'
 git branch -M main
-git push -f git@github.com:gabriel-cacayan/gabriel-cacayan.github.io.git main
+git push -f git@github.com:gabriel-cacayan/gabriel-cacayan.github.io.git main:gh-pages
 
 # if you are deploying to https://<USERNAME>.github.io
 # git push -f git@github.com:<USERNAME>/<USERNAME>.github.io.git main
