@@ -11,69 +11,32 @@
                 using Laravel and Vue, which I find to be powerful and effective
                 tools for building high-quality web projects."
           variant="outlined"
-          max-width="344"
-          class="bg-white"
-        ></v-card>
+          max-width="400"
+          class="bg-white py-4"
+        >
+          <v-divider></v-divider>
+          <div class="ml-4 py-4">
+            <h1 class="text-h6">Projects</h1>
+            <a
+              href="https://vue-movie.gabrielcacayan.com/"
+              target="_blank"
+              class="card-link bullet-link"
+              >Vue Movie</a
+            >
+          </div>
+        </v-card>
       </v-container>
     </v-main>
-
-    <!-- <v-switch
-      v-model="theme"
-      label="Dark Mode"
-      color="orange"
-      value="dark"
-      hide-details
-    ></v-switch>
-    {{ theme }} -->
-    <!-- <TheHeader :drawer="drawer" />
-    <v-main>
-      <template v-if="tab == 'Home'">
-        <HomeDetail />
-      </template>
-      <template v-else-if="tab == 'Projects'">
-        <ProjectDetail />
-      </template>
-      <template v-else>
-        <ExperienceDetail />
-      </template>
-      <v-footer class="d-flex align-center justify-center bg-grey-darken-1">
-        {{ new Date().getFullYear() }} —
-        <strong class="ml-2">Gabriel Cacayan</strong></v-footer
-      >
-    </v-main> -->
   </v-app>
 </template>
 
 <script>
-// import ExperienceDetail from "./components/ExperienceDetail.vue";
-// import HomeDetail from "./components/HomeDetail.vue";
-// import ProjectDetail from "./components/ProjectDetail.vue";
-// import TheHeader from "./components/TheHeader.vue";
-
 export default {
   name: "App",
 
-  components: {
-    // ExperienceDetail,
-    // TheHeader,
-    // HomeDetail,
-    // ProjectDetail,
-  },
-
   data() {
     return {
-      tab: "Home",
-      theme: "dark",
-    };
-  },
-  methods: {
-    selectedTab: function (tab) {
-      this.tab = tab;
-    },
-  },
-  provide() {
-    return {
-      selectedTab: this.selectedTab,
+      // Your data here
     };
   },
 };
@@ -82,5 +45,35 @@ export default {
 <style>
 .pointer {
   cursor: pointer;
+}
+
+.card-heading {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+.card-link {
+  color: #41b883; /* Adjust the color as desired */
+  font-size: 16px;
+  text-decoration: none;
+  position: relative;
+  padding-left: 20px;
+}
+
+.card-link:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 6px;
+  width: 6px;
+  background-color: #41b883; /* Adjust the color as desired */
+  border-radius: 50%;
+}
+
+.card-link:hover {
+  text-decoration: underline;
 }
 </style>
