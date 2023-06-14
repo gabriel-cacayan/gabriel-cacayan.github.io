@@ -1,0 +1,1 @@
+.pointer{cursor:pointer}.card-heading{font-size:24px;font-weight:700;margin-bottom:16px}.card-link{color:#41b883;font-size:16px;text-decoration:none;position:relative;padding-left:20px}.card-link:before{content:"";position:absolute;left:0;top:50%;transform:translateY(-50%);height:6px;width:6px;background-color:#41b883;border-radius:50%}.card-link:hover{text-decoration:underline}
