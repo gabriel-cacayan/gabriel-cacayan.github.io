@@ -14,7 +14,7 @@
           max-width="400"
           class="bg-white py-4"
         >
-          <v-divider></v-divider>
+          <!-- <v-divider></v-divider>
           <div class="ml-4 py-4">
             <h1 class="text-h6">Projects</h1>
             <a
@@ -23,7 +23,7 @@
               class="card-link bullet-link"
               >Vue Movie</a
             >
-          </div>
+          </div> -->
         </v-card>
       </v-container>
     </v-main>
