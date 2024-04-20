@@ -82,6 +82,14 @@ export default {
           name: "Git",
           img: "https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/git/git.png",
         },
+        {
+          name: "npm",
+          img: "https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/npm/npm.png",
+        },
+        {
+          name: "Linux",
+          img: "https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/linux/linux.png",
+        },
       ],
     };
   },

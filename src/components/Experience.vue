@@ -37,9 +37,19 @@
         </div>
         <div class="pl-4 pb-12">
           <ul class="list-disc lg:list-inside">
-            <li>Responsible for creating new websites.</li>
-            <li>Responsible maintaining and adding new features.</li>
-            <li>Collaborate with Senior devs to produce desired outputs.</li>
+            <li>Responsible for developing new websites.</li>
+            <li>
+              Responsible for maintaining existing websites and implementing new
+              features.
+            </li>
+            <li>
+              Collaborate closely with senior developers to achieve project
+              goals and deliver desired outcomes.
+            </li>
+            <li>
+              Actively participate in code reviews and seek feedback for
+              continuous improvement.
+            </li>
           </ul>
         </div>
       </div>
@@ -56,7 +66,18 @@
         </div>
         <div class="pl-4 pb-12">
           <ul class="list-disc lg:list-inside">
-            <li>Responsible maintaining and adding new features.</li>
+            <li>
+              Responsible for maintaining existing websites and implementing new
+              features.
+            </li>
+            <li>
+              Contribute to team discussions and brainstorming sessions for
+              problem-solving and innovation.
+            </li>
+            <li>
+              Assist in troubleshooting and resolving technical issues in web
+              applications.
+            </li>
           </ul>
         </div>
       </div>
