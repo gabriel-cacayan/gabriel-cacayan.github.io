@@ -2,12 +2,20 @@
 import Navbar from "./components/Navbar.vue";
 import Hero from "./components/Hero.vue";
 import About from "./components/About.vue";
+import Experience from "./components/Experience.vue";
+import Skills from "./components/Skills.vue";
+import Projects from "./components/Projects.vue";
+import Footer from "./components/Footer.vue";
 
 export default {
   components: {
     Navbar,
     Hero,
     About,
+    Experience,
+    Skills,
+    Projects,
+    Footer,
   },
 };
 </script>
@@ -16,6 +24,10 @@ export default {
   <Navbar />
   <Hero />
   <About />
+  <Experience />
+  <Skills />
+  <Projects />
+  <Footer />
 </template>
 
 <style>

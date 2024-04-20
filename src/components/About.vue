@@ -1,19 +1,28 @@
 <template>
-  <div class="w-4/5 mx-auto py-8 min-h-screen flex flex-col justify-center">
-    <h1 class="text-primary text-5xl lg:text-7xl font-bold">&lt; about &gt;</h1>
-    <p class="text-xl my-8">
+  <section
+    id="about"
+    class="w-4/5 mx-auto py-8 min-h-screen flex flex-col justify-center"
+  >
+    <Title type="start">about</Title>
+
+    <p class="text-lg lg:text-xl my-12">
       As a web developer, my focus is on creating engaging and user-friendly
       websites and applications. I have experience working with a range of
       technologies, but I particularly enjoy using Laravel, Vue.js, and
       WordPress, which I find to be powerful and effective tools for building
       high-quality web projects.
     </p>
-    <h1 class="text-primary text-5xl lg:text-7xl font-bold text-end">
-      &lt;/ about &gt;
-    </h1>
-  </div>
+
+    <Title type="end">about</Title>
+  </section>
 </template>
+
 <script>
-export default {};
+import Title from "./Title.vue";
+
+export default {
+  components: {
+    Title,
+  },
+};
 </script>
-<style></style>

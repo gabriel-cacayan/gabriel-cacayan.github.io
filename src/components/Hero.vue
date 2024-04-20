@@ -1,5 +1,6 @@
 <template>
   <section
+    id="home"
     class="bg-[#222222] text-white grid grid-cols-1 lg:grid-cols-2 gap-8 p-8 min-h-screen"
   >
     <div class="place-self-center space-y-2">

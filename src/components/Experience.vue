@@ -1,0 +1,79 @@
+<template>
+  <section
+    id="experience"
+    class="py-8 min-h-screen flex flex-col justify-center"
+  >
+    <div class="bg-gradient-to-t from-primary py-20">
+      <Title type="start" class="w-4/5 mx-auto">experience</Title>
+    </div>
+
+    <div class="bg-primary text-white text-base lg:text-lg">
+      <div
+        class="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-8 w-4/5 mx-auto lg:divide-x-4 divide-white"
+      >
+        <div class="space-y-2 lg:text-end">
+          <h1 class="text-lg font-semibold uppercase">Web developer</h1>
+          <p>Fil-Global Immigration Services Corp.</p>
+          <p>April 2023 - Present</p>
+        </div>
+        <div class="pl-4 pb-12">
+          <ul class="list-disc lg:list-inside">
+            <li>Main developer for all internal systems.</li>
+            <li>Migrated projects from old to new servers.</li>
+            <li>Recreated legacy websites as new ones.</li>
+            <li>Mentored junior developers.</li>
+            <li>Responsible for migrating files to AWS s3.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div
+        class="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-8 w-4/5 mx-auto lg:divide-x-4 divide-white"
+      >
+        <div class="space-y-2 lg:text-end">
+          <h1 class="text-lg font-semibold uppercase">Software developer</h1>
+          <p>Johnsons Berkshire Solutions Inc.</p>
+          <p>March 2022 - April 2023</p>
+        </div>
+        <div class="pl-4 pb-12">
+          <ul class="list-disc lg:list-inside">
+            <li>Responsible for creating new websites.</li>
+            <li>Responsible maintaining and adding new features.</li>
+            <li>Collaborate with Senior devs to produce desired outputs.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div
+        class="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-8 w-4/5 mx-auto lg:divide-x-4 divide-white"
+      >
+        <div class="space-y-2 lg:text-end">
+          <h1 class="text-lg font-semibold uppercase">
+            Software developer intern
+          </h1>
+          <p>Johnsons Berkshire Solutions Inc.</p>
+          <p>July 2021 - March 2022</p>
+        </div>
+        <div class="pl-4 pb-12">
+          <ul class="list-disc lg:list-inside">
+            <li>Responsible maintaining and adding new features.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-gradient-to-b from-primary py-20">
+      <Title type="end" class="w-4/5 mx-auto">experience</Title>
+    </div>
+  </section>
+</template>
+
+<script>
+import Title from "./Title.vue";
+
+export default {
+  components: {
+    Title,
+  },
+};
+</script>
