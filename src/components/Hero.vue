@@ -1,0 +1,18 @@
+<template>
+  <section
+    class="bg-[#222222] text-white grid grid-cols-1 lg:grid-cols-2 gap-8 p-8 min-h-screen"
+  >
+    <div class="place-self-center space-y-2">
+      <h1 class="text-5xl lg:text-7xl font-bold">Hello!</h1>
+      <h1 class="text-5xl lg:text-7xl font-bold">I am Gabriel;</h1>
+      <h1 class="text-3xl lg:text-5xl">a web developer;</h1>
+    </div>
+    <div class="place-self-center">
+      <img
+        class="w-96 rounded-full"
+        src="https://avatar.iran.liara.run/public/boy"
+        alt="Rounded avatar"
+      />
+    </div>
+  </section>
+</template>
