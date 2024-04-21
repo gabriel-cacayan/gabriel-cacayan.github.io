@@ -3,10 +3,15 @@
     <Title type="start">projects</Title>
 
     <div class="my-12 grid grid-cols-1 lg:grid-cols-3 gap-8">
-      <div v-for="project in projects">
+      <div v-for="(project, key) in projects" :key="key">
         <div class="bg-white border border-gray-200 rounded-lg shadow">
           <a :href="project.link">
-            <img class="rounded-t-lg" :src="project.img" alt="" />
+            <img
+              :src="project.img"
+              :alt="project.name"
+              loading="lazy"
+              class="rounded-t-lg"
+            />
           </a>
           <div class="p-5">
             <a :href="project.link">
@@ -14,37 +19,50 @@
                 {{ project.name }}
               </h5>
             </a>
-            <p class="mb-3 font-normal text-gray-700">
+            <p
+              class="mb-3 font-normal text-gray-700 h-24 overflow-hidden"
+              :class="{ '!h-auto': key === cardKey }"
+            >
               {{ project.description }}
             </p>
-            <a
-              :href="project.link"
-              target="_blank"
-              class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-primary rounded-lg hover:bg-white hover:text-primary border hover:border-primary"
-            >
-              View project
-              <svg
-                class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
-                aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 14 10"
+            <div class="flex justify-between items-center">
+              <a
+                :href="project.link"
+                target="_blank"
+                class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-primary rounded-lg hover:bg-white hover:text-primary border hover:border-primary"
               >
-                <path
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M1 5h12m0 0L9 1m4 4L9 9"
-                />
-              </svg>
-            </a>
+                View project
+                <svg
+                  class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 14 10"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M1 5h12m0 0L9 1m4 4L9 9"
+                  />
+                </svg>
+              </a>
+              <p
+                class="text-primary cursor-pointer"
+                :class="{ hidden: project.description.length < 180 }"
+                @click="changeHeight(key, project.description)"
+              >
+                <span v-if="cardKey === null">Read more</span>
+                <span v-else>Hide</span>
+              </p>
+            </div>
           </div>
         </div>
       </div>
     </div>
 
-    <Title type="end">projects</Title>
+    <Title type="end" class="mb-12">projects</Title>
   </section>
 </template>
 
@@ -83,7 +101,18 @@ export default {
           link: "https://expendicare.gabrielcacayan.com/login",
         },
       ],
+      cardKey: null,
     };
+  },
+  methods: {
+    changeHeight(key, description) {
+      // console.log(description.length);
+      if (this.cardKey === null) {
+        this.cardKey = key;
+      } else {
+        this.cardKey = null;
+      }
+    },
   },
 };
 </script>

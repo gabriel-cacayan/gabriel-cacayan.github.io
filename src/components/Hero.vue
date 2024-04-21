@@ -10,9 +10,10 @@
     </div>
     <div class="place-self-center">
       <img
-        class="w-96 rounded-full"
         src="https://avatar.iran.liara.run/public/boy"
         alt="Rounded avatar"
+        loading="lazy"
+        class="w-96 rounded-full"
       />
     </div>
   </section>

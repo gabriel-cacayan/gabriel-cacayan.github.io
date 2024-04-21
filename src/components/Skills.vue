@@ -6,11 +6,16 @@
     <Title type="start">skills</Title>
 
     <div class="grid grid-cols-3 lg:grid-cols-5 gap-4 lg:gap-8 my-12">
-      <div v-for="skill in skills" class="text-center">
+      <div v-for="skill in skills" :key="skill.name" class="text-center">
         <div
           class="px-4 py-8 border-4 border-primary flex items-center justify-center rounded-xl"
         >
-          <img :src="skill.img" alt="html" class="w-auto lg:w-16" />
+          <img
+            :src="skill.img"
+            :alt="skill.name"
+            loading="lazy"
+            class="w-auto lg:w-16"
+          />
         </div>
         <p class="mt-4 font-bold">{{ skill.name }}</p>
       </div>
