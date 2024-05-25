@@ -10,7 +10,7 @@
     </div>
     <div class="place-self-center">
       <img
-        src="https://avatar.iran.liara.run/public/boy"
+        :src="profilePicture"
         alt="Rounded avatar"
         loading="lazy"
         class="w-96 rounded-full"
@@ -18,3 +18,15 @@
     </div>
   </section>
 </template>
+
+<script>
+import profilePicture from "../assets/me.jpg";
+
+export default {
+  data() {
+    return {
+      profilePicture,
+    };
+  },
+};
+</script>
