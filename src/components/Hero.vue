@@ -20,7 +20,7 @@
 </template>
 
 <script>
-import profilePicture from "../assets/me.jpg";
+import profilePicture from "../assets/boy.png";
 
 export default {
   data() {
