@@ -70,7 +70,7 @@ export default {
           name: "Zyplo",
           img: zyploImage,
           description:
-            "An intuitive and dynamic eCommerce platform built with modern web technologies to provide a seamless shopping experience. The website includes product catalogs, shopping carts, secure payment gateways, and responsive design for optimal performance across devices. With a focus on user experience, the platform integrates advanced filtering, search functionality, and personalized recommendations to enhance the shopping journey.",
+            "An intuitive and dynamic eCommerce platform built with modern web technologies to provide a seamless shopping experience. The website includes product catalogs, shopping cart, secure payment gateways, and responsive design for optimal performance across devices. With a focus on user experience, the platform integrates advanced filtering, search functionality, and personalized recommendations to enhance the shopping journey.",
           link: "https://zyplo.gabrielcacayan.com",
           bgColor: "bg-white",
         },

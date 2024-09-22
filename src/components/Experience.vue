@@ -18,11 +18,10 @@
         </div>
         <div class="pl-4 pb-12">
           <ul class="list-disc lg:list-inside">
-            <li>Main developer for all internal systems.</li>
+            <li>Main developer for all web applications.</li>
             <li>Migrated projects from old to new servers.</li>
             <li>Recreated legacy websites as new ones.</li>
             <li>Mentored junior developers.</li>
-            <li>Responsible for migrating files to AWS s3.</li>
           </ul>
         </div>
       </div>
