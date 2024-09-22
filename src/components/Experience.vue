@@ -14,7 +14,7 @@
         <div class="space-y-2 lg:text-end">
           <h1 class="text-lg font-semibold uppercase">Web developer</h1>
           <p>Fil-Global Immigration Services Corp.</p>
-          <p>April 2023 - Present</p>
+          <p>April 2023 - June 2024</p>
         </div>
         <div class="pl-4 pb-12">
           <ul class="list-disc lg:list-inside">
