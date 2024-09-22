@@ -6,18 +6,20 @@
       <div
         v-for="(project, key) in projects"
         :key="key"
-        class="grid grid-cols-1 lg:grid-cols-2 gap-4 min-h-screen justify-center items-center"
+        class="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:min-h-screen justify-center items-center text-center lg:text-left border-b border-gray-500 last:border-b-0"
         :class="project.bgColor"
       >
         <div class="order-last lg:order-first">
-          <h1 class="text-4xl font-bold mb-4">{{ project.name }}</h1>
+          <h1 class="text-3xl lg:text-5xl font-bold mb-4">
+            {{ project.name }}
+          </h1>
           <p>
             {{ project.description }}
           </p>
           <a
             :href="project.link"
             target="_blank"
-            class="mt-4 inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-primary rounded-lg hover:bg-white hover:text-primary border hover:border-primary"
+            class="my-4 inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-primary rounded-lg hover:bg-white hover:text-primary border hover:border-primary"
           >
             View project
             <svg
