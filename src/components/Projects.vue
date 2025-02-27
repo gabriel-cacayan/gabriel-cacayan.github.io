@@ -1,8 +1,8 @@
 <template>
   <section id="projects" class="mx-auto py-8 min-h-screen w-4/5">
-    <Title type="start" class="">projects</Title>
+    <Title class="">Projects</Title>
 
-    <div class="my-12">
+    <div class="mt-4 lg:mt-0 mb-12">
       <div
         v-for="(project, key) in projects"
         :key="key"
@@ -49,7 +49,6 @@
         </div>
       </div>
     </div>
-    <Title type="end" class="mb-12">projects</Title>
   </section>
 </template>
 

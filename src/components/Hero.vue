@@ -5,8 +5,8 @@
   >
     <div class="place-self-center space-y-2">
       <h1 class="text-5xl lg:text-7xl font-bold">Hello!</h1>
-      <h1 class="text-5xl lg:text-7xl font-bold">I am Gabriel;</h1>
-      <h1 class="text-3xl lg:text-5xl">a web developer;</h1>
+      <h1 class="text-5xl lg:text-7xl font-bold">I am Gabriel</h1>
+      <h1 class="text-3xl lg:text-5xl">a full-stack developer</h1>
     </div>
     <div class="place-self-center">
       <img

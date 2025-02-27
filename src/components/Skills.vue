@@ -3,7 +3,7 @@
     id="skills"
     class="w-4/5 mx-auto py-8 min-h-screen flex flex-col justify-center"
   >
-    <Title type="start">skills</Title>
+    <Title type="start">Skills</Title>
 
     <div class="grid grid-cols-3 lg:grid-cols-5 gap-4 lg:gap-8 my-12">
       <div v-for="skill in skills" :key="skill.name" class="text-center">
@@ -20,8 +20,6 @@
         <p class="mt-4 font-bold">{{ skill.name }}</p>
       </div>
     </div>
-
-    <Title type="end">skills</Title>
   </section>
 </template>
 
