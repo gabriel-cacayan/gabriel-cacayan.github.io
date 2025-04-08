@@ -3,7 +3,7 @@
     id="skills"
     class="w-4/5 mx-auto py-8 min-h-screen flex flex-col justify-center"
   >
-    <Title type="start">Skills</Title>
+    <Title type="start">Tech Stack</Title>
 
     <div class="grid grid-cols-3 lg:grid-cols-5 gap-4 lg:gap-8 my-12">
       <div v-for="skill in skills" :key="skill.name" class="text-center">
@@ -66,6 +66,10 @@ export default {
           img: "https://raw.githubusercontent.com/github/explore/56a826d05cf762b2b50ecbe7d492a839b04f3fbf/topics/laravel/laravel.png",
         },
         {
+          name: "Livewire",
+          img: "https://avatars.githubusercontent.com/u/51960834?s=200&v=4",
+        },
+        {
           name: "MySQL",
           img: "https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/mysql/mysql.png",
         },
@@ -80,6 +84,14 @@ export default {
         {
           name: "AWS",
           img: "https://raw.githubusercontent.com/github/explore/fbceb94436312b6dacde68d122a5b9c7d11f9524/topics/aws/aws.png",
+        },
+        {
+          name: "GoDaddy",
+          img: "https://avatars.githubusercontent.com/u/1406546?s=200&v=4",
+        },
+        {
+          name: "CloudFlare",
+          img: "https://avatars.githubusercontent.com/u/314135?s=200&v=4",
         },
         {
           name: "Git",
