@@ -54,6 +54,10 @@ export default {
           img: "https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png",
         },
         {
+          name: "React.js",
+          img: "https://github.com/github/explore/blob/main/topics/react/react.png?raw=true",
+        },
+        {
           name: "Vue.js",
           img: "https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/vue/vue.png",
         },
@@ -90,7 +94,7 @@ export default {
           img: "https://avatars.githubusercontent.com/u/1406546?s=200&v=4",
         },
         {
-          name: "CloudFlare",
+          name: "Cloudflare",
           img: "https://avatars.githubusercontent.com/u/314135?s=200&v=4",
         },
         {

@@ -55,7 +55,7 @@
 <script>
 import Title from "./Title.vue";
 import trabagoImage from "../assets/trabago_laptop.png";
-import vueMovieImage from "../assets/vue_movie_laptop.png";
+import cineVaulImage from "../assets/CineVault.png";
 import zyploImage from "../assets/zyplo_laptop.png";
 
 export default {
@@ -74,11 +74,11 @@ export default {
           bgColor: "bg-white",
         },
         {
-          name: "Vue Movie",
-          img: vueMovieImage,
+          name: "CineVault",
+          img: cineVaulImage,
           description:
-            "Vue Movie is an online database of information related to films, television series, ratings, and reviews. This project is created using Vue.js and an API.",
-          link: "https://vue-movie.gabrielcacayan.com/",
+            "CineVault is your personal hub for discovering, tracking, and celebrating movies. Whether you're a casual viewer or a hardcore cinephile, CineVault lets you explore a massive catalog of films powered by the TMDB API.",
+          link: "https://cinevault.gabrielcacayan.com/",
           bgColor: "bg-white",
         },
         {
